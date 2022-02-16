@@ -1,0 +1,121 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.cabecalho {
+    background-color: #F0E3D4;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho img {
+    width: 60px;
+    height: 60px;
+    margin: 25px auto;
+}
+
+.cabecalho nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.conteudo {
+    text-align: center;
+    background-color: #ffffff;
+    margin-bottom: 100px;
+}
+
+.conteudo h2 {
+    padding: 20px;
+    font-size: 24px;
+}
+
+.conteudo h3 {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.conteudo p {
+    padding: 10px;
+}
+
+.card-produto {
+    width: 250px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    margin: auto;
+    background-color: #FCD0A8;
+    box-sizing: border-box;
+}
+
+.card-produto img {
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.botao-escolhe-item {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.botao-escolhe-item button {
+    height: 52px;
+    width: 60px;
+    border: salmon solid;
+    box-sizing: border-box;    
+}
+
+.produto {
+    display: grid;
+    gap: 16px;
+}
+
+.valor-produto {
+    color: #37C957;
+    font-weight: 600;
+}
+
+.rodape {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #F0E3D4;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (min-width: 576px) {
+    .container {
+      width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 720px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 960px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1140px;
+    }
+  }
+  @media (min-width: 1400px) {
+    .container {
+      width: 1320px;
+    }
+  }

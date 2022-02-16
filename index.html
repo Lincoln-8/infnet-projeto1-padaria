@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/de97c1570b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Padaria tudo de bom</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img src="assets/img/padaria.png" alt="logo-padaria" />
+      <nav>
+        <a href="">Comidas</a>
+        <a href="">Horários</a>
+        <a href="">Localização</a>
+        <a href="">Contato</a>
+      </nav>
+    </header>
+    <main class="conteudo">
+      <h2>Pães</h2>
+      <div class="produto">
+        <div class="card-produto">
+          <img src="assets/img/pao-de-quejo.jpg" alt="pão de quejo" />
+          <div class="card-produto-conteudo">
+            <h3>Pão de queijo</h3>
+            <p>R$ <span class="valor-produto">1,00</span></p>
+            <div class="botao-escolhe-item">
+              <button class="button-menos">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <p>R$ <span class="valor-total-produto">0,00</span></p>
+              <button class="button-mais">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="rodape">
+      <p>Valor Total R$: <span id="total-geral">0,00</span></p>      
+    </footer>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
