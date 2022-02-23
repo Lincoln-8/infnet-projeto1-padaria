@@ -1,121 +1,298 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+  color: #424242;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  /*padding-top: 90px;*/
+}
+
+/* TITLES */
+h1 {
+  font-weight: 600;
+  font-size: 36px;
+  margin: 30px 0 15px;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: left;
+  margin: 10px 0;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+}
+
+section {
+  margin: 20px 0;
+}
+
+.container {
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .cabecalho {
-    background-color: #F0E3D4;
-    display: flex;
-    flex-direction: column;
+  background-color: #f0e3d4;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 3px 4px rgb(0 0 0 / 21%);
 }
 
 .cabecalho img {
-    width: 60px;
-    height: 60px;
-    margin: 25px auto;
+  width: 60px;
+  height: 60px;
+  margin: 25px auto;
 }
 
 .cabecalho nav {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .conteudo {
-    text-align: center;
-    background-color: #ffffff;
-    margin-bottom: 100px;
+  text-align: center;
+  background-color: #ffffff;
+  margin-bottom: 100px;
 }
 
-.conteudo h2 {
-    padding: 20px;
-    font-size: 24px;
+/* CARD */
+/*
+.produtos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 15px;
+}*/
+
+.produtos-card {
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
-.conteudo h3 {
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
+.produtos-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
 }
 
-.conteudo p {
-    padding: 10px;
+.btn-adicionar {
+  text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 9px 0;
+  border: 1px solid salmon;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  background-color: salmon;
+  margin-top: auto;
 }
 
-.card-produto {
-    width: 250px;
-    height: 300px;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    margin: auto;
-    background-color: #FCD0A8;
-    box-sizing: border-box;
+.btn-adicionar:hover {
+  background-color: darksalmon;
+  color: white;
 }
 
-.card-produto img {
-    box-sizing: border-box;
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.botao-escolhe-item {
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    align-items: center;
-}
-
-.botao-escolhe-item button {
-    height: 52px;
-    width: 60px;
-    border: salmon solid;
-    box-sizing: border-box;    
+.produtos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 10px;
 }
 
 .produto {
-    display: grid;
-    gap: 16px;
+  display: grid;
+  gap: 16px;
 }
 
-.valor-produto {
-    color: #37C957;
-    font-weight: 600;
+.produtos-card-conteudo p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.produtos-card-conteudo {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin: auto;
+  height: auto;
+  background-color: #fcd0a8;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.preco {
+  color: #37c957;
+  font-weight: 600;
+}
+
+/*Display grid para manipular a área de infos gerais*/
+.infos-gerais {
+  display: grid;
+  grid-template-areas:
+    "areacontato"
+    "areahorario"
+    "areafale";
+  gap: 15px;
+}
+
+#contato {
+  grid-area: areacontato;
+}
+
+#horario {
+  grid-area: areahorario;
+}
+
+#fale {
+  grid-area: areafale;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+}
+
+.infos span {
+  vertical-align: middle;
+  font-size: 12px;
+}
+
+#email {
+  font-size: 20px;
+}
+
+#tel {
+  font-size: 15px;
+}
+
+#whats {
+  font-size: 20px;
+}
+
+#local {
+  font-size: 12px;
+}
+
+/*Fonts Awesome*/
+.fa {
+  font-size: 20px !important;
+  box-sizing: border-box !important;
+  /*display: block !important;*/
+  width: 100%;
+  margin: 5px 0 !important;
+  text-align: left !important;
+  vertical-align: middle !important;
+}
+
+.fa:before {
+  margin-right: 15px !important;
+  font-size: 35px !important;
+}
+
+.fa-whatsapp-square {
+  color: #26d367;
 }
 
 .rodape {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #F0E3D4;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-sizing: border-box;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f0e3d4;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
+/*alterações formulário*/
+.label-padrao {
+  display: block;
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.input-padrao {
+  display: block;
+  text-align: left;
+  padding: 10px 25px;
+  width: 100%;
+  border: 1px solid;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.enviar {
+  width: 40%;
+  padding: 15px 0;
+  background: salmon;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.2s linear;
+  display: block;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background: darksalmon;
+  color: white;
+  /*transform: scale(1.05);*/
+}
+
+/*Media Querys*/
 @media (min-width: 576px) {
-    .container {
-      width: 540px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  .container {
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  @media (min-width: 768px) {
-    .container {
-      width: 720px;
-    }
+  .produtos {
+    grid-template-columns: 1fr 1fr 1fr;
   }
-  @media (min-width: 992px) {
-    .container {
-      width: 960px;
-    }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
   }
-  @media (min-width: 1200px) {
-    .container {
-      width: 1140px;
-    }
+  .infos-gerais {
+    grid-template-areas:
+    "areacontato areahorario"
+    "areafale areafale";
   }
-  @media (min-width: 1400px) {
-    .container {
-      width: 1320px;
-    }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
   }
+  .produtos {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}

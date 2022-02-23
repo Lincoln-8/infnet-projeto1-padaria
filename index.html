@@ -20,37 +20,101 @@
   </head>
   <body>
     <header class="cabecalho">
-      <img src="assets/img/padaria.png" alt="logo-padaria" />
-      <nav>
-        <a href="">Comidas</a>
-        <a href="">Horários</a>
-        <a href="">Localização</a>
-        <a href="">Contato</a>
-      </nav>
+      <div class="container">
+        <img src="assets/img/padaria.png" alt="logo-padaria" />
+        <nav>
+          <a href="#horario">Horários</a>
+          <a href="#local">Localização</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
     </header>
     <main class="conteudo">
-      <h2>Pães</h2>
-      <div class="produto">
-        <div class="card-produto">
-          <img src="assets/img/pao-de-quejo.jpg" alt="pão de quejo" />
-          <div class="card-produto-conteudo">
-            <h3>Pão de queijo</h3>
-            <p>R$ <span class="valor-produto">1,00</span></p>
-            <div class="botao-escolhe-item">
-              <button class="button-menos">
-                <i class="fa-solid fa-minus"></i>
-              </button>
-              <p>R$ <span class="valor-total-produto">0,00</span></p>
-              <button class="button-mais">
-                <i class="fa-solid fa-plus"></i>
-              </button>
+      <div class="container">
+        <h1>Cardápio digital</h1>
+        <section>
+          <h2>Comidas</h2>
+          <div class="produtos">
+            <article class="produtos-card">
+              <img src="assets/img/pao-de-quejo.jpg" alt="pão de quejo" />
+              <div class="produtos-card-conteudo">
+                <h3>Pão de queijo</h3>
+                <p class="preco">R$ <span class="valor-produto">1,00</span></p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                  soluta iusto, ipsam sed voluptatum sit ullam nemo, eum placeat
+                  maiores neque odit corporis debitis magni autem at
+                  consequuntur labore. Cupiditate?
+                </p>
+                <button class="btn-adicionar">Adicionar</button>
+              </div>
+            </article>
+          </div>
+          <h2>Bebidas</h2>
+          <div class="produtos">
+            <article class="produtos-card">
+              <img
+                src="assets/img/antartica-2l.jpg"
+                alt="Guaraná antártica 2l"
+              />
+              <div class="produtos-card-conteudo">
+                <h3>Guaraná antártica 2l</h3>
+                <p class="preco">R$ <span class="valor-produto">8,00</span></p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
+                  soluta iusto, ipsam sed voluptatum sit ullam nemo, eum placeat
+                  maiores neque odit corporis debitis magni autem at
+                  consequuntur labore. Cupiditate?
+                </p>
+                <button class="btn-adicionar">Adicionar</button>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section>
+          <div class="infos-gerais">            
+            <div id="contato" class="contatos infos">
+              <h2>Contato</h2>
+              <i class="fa fa-envelope-o"><span id="email">contato@padariatudodebom.com</span></i>
+              <i class="fa fa-phone"><span id="tel">(83) 3333-3333</span></i>
+              <a href="https://api.whatsapp.com/send/?phone=553199999999&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20pedido" target="_blank">
+                <i class="fa fa-brands fa-whatsapp-square"><span id="whats">(83) 99999-9999</span></i>
+              </a>
+              <i class="fa fa-map-signs"><span id="local">Avenida Almirante Maximiano Fonseca</span></i>
+            </div>            
+            <div id="horario" class="horarios infos">
+              <h2>Horários</h2>
+              <i class="fa fa-shopping-basket"><span>Loja: 07:00 as 20:00 (Segunda a Sabado)</span></i>
+              <i class="fa fa-coffee"><span>Cafe: 07:30 as 11:00 (Todos os dias)</span></i>
+              <i class="fa fa-cutlery"><span>Almoco: 11:30 as 14:30 (Segunda a Sabado)</span></i>
+              <i class="fa fa-shopping-basket"><span>Jantar: 17:00 as 19:40 (Segunda a Sabado)</span></i>
+            </div>
+            <div id="fale" class="fale-conosco infos">
+              <h2>Fale Conosco</h2>
+              <form>
+                <label for="nomesobrenome" class="label-padrao">Nome e sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+        
+                <label for="email" class="label-padrao">Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+        
+                <label for="telefone" class="label-padrao">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+        
+                <label for="mensagem" class="label-padrao">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+                
+                <input type="submit" value="Enviar formulário" class="enviar">
+              </form>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </main>
     <footer class="rodape">
-      <p>Valor Total R$: <span id="total-geral">0,00</span></p>      
+      <div class="container">
+        <p>Valor Total R$: <span id="total-geral">0,00</span></p>
+      </div>
     </footer>
     <script src="./assets/js/index.js"></script>
   </body>
