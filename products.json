@@ -1,0 +1,29 @@
+{
+    "groups": [
+        {
+            "id": 1,
+            "name": "Comidas",
+            "products": [
+                {
+                    "id": 1,
+                    "name": "Pão de queijo",
+                    "image": "assets/img/pao-de-quejo.jpg",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit soluta iusto, ipsam sed voluptatum sit ullam nemo, eum placeat maiores neque odit corporis debitis magni autem at consequuntur labore. Cupiditate?",
+                    "price": 1.0
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Bebidas",
+            "products": [
+                {
+                    "id": 2,
+                    "name": "Guaraná antártica 2L",
+                    "image": "assets/img/antartica-2l.jpg",                    
+                    "price": 8.0
+                }
+            ]
+        }        
+    ]
+}

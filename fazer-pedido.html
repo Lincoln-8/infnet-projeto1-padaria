@@ -31,10 +31,48 @@
   </header>
   <main class="conteudo">
     <div class="container">
-      <h1>Cardápio digital</h1>
-      <div id="groups-root">
-        <i class="fa-solid fa-spinner products-loading"></i>
-      </div>
+      <section>
+
+        <h1>Finalizar Pedido</h1>
+        <form class="form-checkout">
+          <label for="input-name" class="label-padrao">Nome e sobrenome</label>
+          <input type="text" id="input-name" class="input-padrao" placeholder="Digite seu nome" required />
+
+          <label for="input-phone" class="label-padrao">Telefone</label>
+          <input type="text" id="input-phone" class="input-padrao" placeholder="(99) 99999-9999" required />
+
+          <label for="input-cep" class="label-padrao">CEP</label>
+          <input type="text" id="input-cep" class="input-padrao" placeholder="99999-999" required />
+
+          <label for="input-address" class="label-padrao">Endereço</label>
+          <input type="text" id="input-address" class="input-padrao" placeholder="Rua, Avenida, etc." required />
+
+          <div class="form-row">
+            <div>
+              <label for="input-number" class="label-padrao">Número</label>
+              <input type="text" id="input-number" class="input-padrao" required />
+            </div>
+            <div>
+              <label for="input-complement" class="label-padrao">Complemento</label>
+              <input type="text" id="input-complement" class="input-padrao" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="input-neighborhood" class="label-padrao">Bairro</label>
+              <input type="text" class="input-padrao" id="input-neighborhood" required />
+            </div>
+            <div class="form-group">
+              <label for="input-city" class="label-padrao">Cidade</label>
+              <input type="text" class="input-padrao" id="input-city" required />
+            </div>
+          </div>
+
+          <input type="submit" value="Calcular frete" class="enviar" />
+        </form>
+
+      </section>
     </div>
   </main>
   <footer class="rodape">
@@ -78,10 +116,11 @@
         <p class="h2">Total</p>
         <p>R$ 99,80</p>
       </div>
-      <button class="btn btn-outline" id="btn-add-more">Adicionar mais itens</button>
-      <a class="btn btn-main" href="fazer-pedido.html">Fazer pedido</a>
+      <button class="btn btn-outline">Adicionar mais itens</button>
+      <button class="btn btn-main">Fazer pedido</button>
     </div>
   </aside>
+  <script src="https://unpkg.com/imask@6.4.2/dist/imask.min.js"></script>
   <script src="./assets/js/index.js"></script>
 </body>
 
